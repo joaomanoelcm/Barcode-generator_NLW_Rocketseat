@@ -18,7 +18,9 @@ class TagCreatorController:
 
     def __format_response(self, path_from_tag: str) -> Dict:
         return {
-            "type": "Tag Image",
-            "count": 1,
-            "path": f'{path_from_tag}.png'
+            "data": {
+                "type": "Tag Image",
+                "count": 1,
+                "path": f'{path_from_tag}.png'
+            }
         }
